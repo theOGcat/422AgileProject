@@ -1,0 +1,2 @@
+﻿INSERT INTO [dbo].[OrderInfo] ([order_id], [UserID], [total], [card_no], [delivery_id]) VALUES (0, 1, 2, 3, 4)
+INSERT into OrderInfo (order_id, UserID, total, card_no, delivery_id) VALUES (0, 1, 2, 3, 4)

@@ -1,0 +1,26 @@
+﻿<Window x:Class="BookStoreGUI.CheakOut"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookStoreGUI"
+        mc:Ignorable="d"
+        Title="CheakOut" Height="450" Width="800">
+    <Grid>
+        <Button Content="Check Out" Click="Check_out_click" HorizontalAlignment="Left" Margin="507,321,0,0" VerticalAlignment="Top" Width="175" Height="52" FontSize="25"/>
+       
+        <TextBox Name ="PriceCount1" HorizontalAlignment="Left" Height="190" Margin="492,80,0,0" TextWrapping="Wrap" 
+                 Text="Book total：&#xD;&#xA;Service Price :&#xD;&#xA;Total :" VerticalAlignment="Top" Width="264" FontSize="20"/>
+        
+        <Button Content="Edit" x:Name="loginButton" Click="EditButton_Click" HorizontalAlignment="Left" Margin="82,259,0,0" VerticalAlignment="Top" Width="148" Height="45" FontSize="18" RenderTransformOrigin="0.473,-0.133"/>
+        
+        <TextBox Name ="DefaultNum" HorizontalAlignment="Left" Height="42" Margin="10,101,0,0" 
+                 TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="309" FontSize="20" />
+        
+        <TextBox x:Name ="Address" HorizontalAlignment="Left" Height="42" Margin="10,196,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="309" FontSize="20" TextChanged="Address_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="146"><Run Text="Card Number"/><Run Text=" "/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="10,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="146"><Run Text="Address"/><Run Text=" "/><Run Text=":"/></TextBlock>
+        <TextBox Name ="UID" HorizontalAlignment="Left" Height="23" Margin="324,321,0,0" TextWrapping="Wrap" Text="User Id :" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

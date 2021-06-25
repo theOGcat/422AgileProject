@@ -1,0 +1,6 @@
+﻿INSERT INTO [dbo].[Payment_Info] ([card_no], [user_id], [name_on_card], [expiration_date]) VALUES (40095222, 4, N'HaoyvWang', NULL)
+INSERT INTO [dbo].[Payment_Info] ([card_no], [user_id], [name_on_card], [expiration_date]) VALUES (41005026, 1, N'baitongwu', NULL)
+INSERT INTO [dbo].[Payment_Info] ([card_no], [user_id], [name_on_card], [expiration_date]) VALUES (41005555, 1, N'baitongwu', NULL)
+INSERT INTO [dbo].[Payment_Info] ([card_no], [user_id], [name_on_card], [expiration_date]) VALUES (42003522, 2, N'PeiranSun', NULL)
+INSERT INTO [dbo].[Payment_Info] ([card_no], [user_id], [name_on_card], [expiration_date]) VALUES (42522165, 3, N'HengWei', NULL)
+INSERT INTO [dbo].[Payment_Info] ([card_no], [user_id], [name_on_card], [expiration_date]) VALUES (42665413, 5, N'QingyiJi', NULL)

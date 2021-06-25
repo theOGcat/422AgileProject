@@ -1,0 +1,47 @@
+﻿<Window x:Class="BookStoreGUI.SignUpDiaLog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookStoreGUI"
+        mc:Ignorable="d"
+            Title="Signup" Height="300" Width="350">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="0" Margin="2">User Name:</Label>
+        <TextBox Name="nameTextBox" Grid.Column="1" Grid.Row="0" Margin="2"/>
+        <Label Grid.Column="0" Grid.Row="1" Margin="2">Password:</Label>
+        <TextBox Name="passwordTextBox" Grid.Column="1" Grid.Row="1" Margin="2"/>
+        <Label Grid.Column="0" Grid.Row="2" Margin="2">PasswordConfirm:</Label>
+        <TextBox Name="passwordcondirmTextBox" Grid.Column="1" Grid.Row="2" Margin="2"/>
+        <Label Grid.Column="0" Grid.Row="3" Margin="2">Payment</Label>
+        <Label Grid.Column="0" Grid.Row="4" Margin="2">CardNumber:</Label>
+        <TextBox Name="CardNumber" Grid.Column="1" Grid.Row="4" Margin="2"/>
+        <Label Grid.Column="0" Grid.Row="5" Margin="2">NameOnCard:</Label>
+        <TextBox Name="NameOnCard" Grid.Column="1" Grid.Row="5" Margin="2"/>
+        <Label Grid.Column="0" Grid.Row="6" Margin="2">Address:</Label>
+        <TextBox Name="Address" Grid.Column="1" Grid.Row="6" Margin="2"/>
+        <StackPanel Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Center">
+
+            <Button Name="okButton" Click="okButton_Click" IsDefault="True" MinWidth="80"  Margin="0,10,5,5">OK</Button>
+            <Button Name="cancleButton" Click="cancleButton_Click" IsCancel="True" MinWidth="80"  Margin="40,10,5,5">Cancle</Button>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
+

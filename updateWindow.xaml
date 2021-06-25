@@ -1,0 +1,51 @@
+﻿<Window x:Class="BookStoreGUI.updateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookStoreGUI"
+        mc:Ignorable="d"
+        Title="Personal information" Height="215.566" Width="500">
+    <Grid Margin="0,0,-0.4,5.2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="24.8"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="115.8"/>
+            <ColumnDefinition Width="372.8"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="1" Margin="2,2.2,16.8,2" Grid.ColumnSpan="2">User Name:</Label>
+        <Label Grid.Column="0" Grid.Row="3" Margin="2,1.2,16.8,2.4" Content="Payment:" Grid.ColumnSpan="2"/>
+        <Label Grid.Column="0" Grid.Row="4" Margin="2,1.6,16.8,54.2" Grid.ColumnSpan="2">Address:</Label>
+
+        <StackPanel Grid.ColumnSpan="1" Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="87.2,63.6,16.6,-20.2" Width="269" Grid.Column="2" Grid.RowSpan="2">
+            <Button x:Name="okButton" Click="okButton_Click" IsDefault="True" MinWidth="80"  Margin="0,18,5,0" Content="OK" RenderTransformOrigin="-0.459,0.686" Height="28" VerticalAlignment="Top"/>
+            <Button x:Name="cancleButton" Click="cancleButton_Click" IsCancel="True" MinWidth="80"  Margin="73,18,5,14.4" Content="Cancle" RenderTransformOrigin="0.5,0.5" Height="28">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.298"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+
+        </StackPanel>
+        <Button x:Name="ChangePW_Button" Click="PasswordButton_Click" Content="Change Password" HorizontalAlignment="Left" Margin="23,39.6,0,0" Grid.Row="4" VerticalAlignment="Top" Width="110" Height="30" Grid.ColumnSpan="2" Grid.Column="1" />
+        <Button Content="Change payment" HorizontalAlignment="Left" Margin="73.2,39.6,0,0" Grid.Row="4" VerticalAlignment="Top" Width="113" Height="30" Grid.Column="2" Click="PaymentButton_Click"/>
+        <Button Content="Change Address" Click="AddressButton_Click" HorizontalAlignment="Left" Margin="240.2,39.6,0,0" Grid.Row="4" VerticalAlignment="Top" Width="102" Height="30" Grid.Column="2"/>
+        <Button Content="Logout" HorizontalAlignment="Left" Margin="38,1.8,0,-6.2" Grid.Row="5" VerticalAlignment="Top" Width="75" Height="28" Click="logout" Grid.Column="1"/>
+        <TextBox x:Name ="Payment" HorizontalAlignment="Left" Height="29" Margin="115,0.2,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="372" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <TextBox x:Name ="Address" HorizontalAlignment="Left" Height="29" Margin="115,0.6,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="372" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <TextBox x:Name ="Name" HorizontalAlignment="Left" Height="29" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="372" Grid.Column="2" />
+
+    </Grid>
+</Window>
